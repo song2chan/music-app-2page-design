@@ -1,0 +1,284 @@
+@import "reset.css";
+
+body {
+  font-weight: 600;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f3f3f4;
+}
+
+.content__box {
+  background-color: white;
+  border-radius: 40px;
+  width: 400px;
+  height: 730px;
+  padding: 0px 20px;
+  margin-right: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__button {
+  font-size: 20px;
+}
+
+.singer__info {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.singer__img {
+  position: relative;
+}
+
+.singer__img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.img__main {
+  position: relative;
+  z-index: 1;
+}
+
+.img__blur {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  opacity: 0.7;
+  filter: blur(10px);
+  z-index: 0;
+}
+
+.singer__name {
+  font-size: 30px;
+  margin: 25px 0 15px 0;
+}
+
+.singer__genre,
+.music__singer {
+  font-size: 14px;
+  opacity: 0.4;
+}
+
+.interactive-button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.interactive-button div {
+  width: 110px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  border-radius: 20px;
+  margin: 0px 5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.button__shuffle {
+  background-color: #222222;
+  color: white;
+  text-transform: capitalize;
+}
+
+.button__heart {
+  background-color: pink;
+}
+
+.music__list {
+  margin-top: 40px;
+}
+
+.list__element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.music__cover {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.list__element:first-of-type {
+  border-radius: 10px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list__element:first-of-type .music__cover {
+  filter: brightness(75%);
+}
+
+.music__playing {
+  position: relative;
+}
+
+.music__playing i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.music__info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 60%;
+}
+
+.music__singer {
+  margin-bottom: 7px;
+}
+
+.music__more {
+  opacity: 0.4;
+}
+
+.play-status-bar {
+  margin-top: 35px;
+  display: flex;
+  padding: 10px 15px;
+  border-radius: 40px;
+  background-color: #222222;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+  justify-content: space-between;
+}
+
+.play__status {
+  display: flex;
+  align-items: center;
+  width: 33%;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+.play__status > div:nth-child(2) {
+  font-size: 20px;
+  position: relative;
+}
+
+.playing__info {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playing__cover {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.playing__img {
+  position: relative;
+}
+
+.playing__img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.playing__song-name {
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+.playing__singer {
+  margin-top: 15px;
+  opacity: 0.4;
+}
+
+.playing__progress {
+  width: 100%;
+}
+
+.playing__time {
+  margin-top: 32px;
+  font-size: 11px;
+  opacity: 0.4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.playing__progress-bar {
+  margin-top: 8px;
+  margin-bottom: 30px;
+  height: 3px;
+  background-color: #ececec;
+  display: flex;
+  align-items: center;
+}
+
+.playing__progress-bar div {
+  background-color: #222222;
+  z-index: 999;
+}
+
+.progress-bar__played {
+  width: 62%;
+  height: 3px;
+}
+
+.progress-bar__present {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.play__interactiv-button {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.non-active__button {
+  opacity: 0.2;
+}
+
+.active__button {
+  font-size: 18px;
+}
+
+.button__container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: #222222;
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button__container .active__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
